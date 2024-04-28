@@ -98,15 +98,27 @@ header.sticky {
     height: 6rem;
 }
 
-.header .logo h1 {
+.header .logo .company_name {
+    display: flex;
+    flex-direction: column;
     padding: 0 1.5rem;
-    font-size: 4rem;
+}
+
+.header .logo .company_name h1 {
+    font-size: 3rem;
     text-transform: uppercase;
     color: #ffffff;
     display: none;
 }
 
-.header.sticky .logo h1 {
+.header .logo .company_name h2 {
+    font-size: 1.5rem;
+    color: #fff;
+    display: none;
+}
+
+.header.sticky .logo .company_name h1,
+.header.sticky .logo .company_name h2 {
     display: block;
 }
 
@@ -142,16 +154,17 @@ header.sticky .navbar a {
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
+    text-align: center;
 }
 
 .home .content {
-    max-width: 60rem;
+    width: 100%;
     color: #fff;
     margin-top: 4rem;
 }
 
 .home .content h3 {
-    font-size: 5.5rem;
+    font-size: 5rem;
     text-transform: uppercase;
 }
 
@@ -176,7 +189,18 @@ header.sticky .navbar a {
     padding: 1rem;
 }
 
+.about .row .about-img {
+    flex: 1 1 45rem;
+    padding: 1rem;
+}
+
 .about .row .img img {
+    width: 100%;
+    border: 1rem solid var(--main);
+    border-radius: 0.6rem;
+}
+
+.about .row .about-img img {
     width: 100%;
     border: 1rem solid var(--main);
     border-radius: 0.6rem;
@@ -358,6 +382,43 @@ header.sticky .navbar a {
     padding: 0.5rem 0;
     color: #eee;
 }
+
+
+/* partners section start  */
+
+
+.partners .box {
+    border-radius: 0.5rem;
+    background: #ebebeb;
+    padding: 2rem;
+    position: relative;
+    align-items: center;
+}
+
+.partners .box:hover {
+    transform: scale(1.04);
+}
+
+.partners .box .img {
+
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+.partners .box .img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5%;
+    object-fit: cover;
+    align-items: center;
+}
+
+
+
+
+
 
 /* contact section start  */
 
@@ -1105,7 +1166,7 @@ footer .footer-row .col .footer-logo {
         padding: 5px 15px;
     }
 
-    .header .logo h1 {
+    .header .logo .company_name h1 {
         font-size: 3rem;
     }
 
@@ -1127,10 +1188,11 @@ footer .footer-row .col .footer-logo {
         color: #000;
     }
 
-    .home {
-        background-position: left;
-        justify-content: center;
-        text-align: center;
+    .home .content h3 {
+        font-size: 3.5rem;
+        /* background-position: left; */
+        /* justify-content: center; */
+
     }
 
     footer {
@@ -1162,6 +1224,14 @@ footer .footer-row .col .footer-logo {
 @media (max-width: 450px) {
     html {
         font-size: 50%;
+    }
+
+    .home .content h3 {
+        font-size: 2.5rem;
+    }
+
+    .home .content p {
+        font-size: 1.5rem;
     }
 
     .about-video-img {
@@ -1206,6 +1276,7 @@ footer .footer-row .col .footer-logo {
     .services-1 .cards .card h2 {
         font-size: 20px;
     }
+
     .whatsapp-style {
         bottom: 5px;
     }
@@ -1213,6 +1284,7 @@ footer .footer-row .col .footer-logo {
     .whatsapp-style .whatsapp-img {
         width: 13%;
     }
+
     .call-style {
         bottom: 60px;
     }

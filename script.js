@@ -1,4 +1,4 @@
-window.addEventListener('scroll', function(){
+window.addEventListener('scroll', function () {
     const header = document.querySelector('header');
     header.classList.toggle("sticky", window.scrollY > 0);
 });
@@ -29,15 +29,32 @@ var swiper = new Swiper(".ReviewSlide", {
         0: {
             slidesPerView: 1,
         },
-        700:{
-            slidesPerView :2,
+        700: {
+            slidesPerView: 2,
         },
-        1050:{
-            slidesPerView:3,
+        1050: {
+            slidesPerView: 3,
         },
     },
-    autoplay:{
+    autoplay: {
         delay: 4000,
         disableOnInteraction: false,
+        
     },
 });
+
+
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 300,
+})
+
+sr.reveal(`.content ,.footer-row`)
+sr.reveal(`.about-img `,{delay : 800, scale: .5})
+sr.reveal(`.box-1 `,{origin : 'left'})
+sr.reveal(`.box-2 `,{origin : 'right'})
+
+// ScrollReveal().reveal('.content');
