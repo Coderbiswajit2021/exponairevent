@@ -39,7 +39,7 @@ var swiper = new Swiper(".ReviewSlide", {
     autoplay: {
         delay: 4000,
         disableOnInteraction: false,
-        
+
     },
 });
 
@@ -52,9 +52,20 @@ const sr = ScrollReveal({
     delay: 300,
 })
 
-sr.reveal(`.content ,.footer-row`)
-sr.reveal(`.about-img `,{delay : 800, scale: .5})
-sr.reveal(`.box-1 `,{origin : 'left'})
-sr.reveal(`.box-2 `,{origin : 'right'})
+
+
+sr.reveal(`.scroll-top, .footer-row`)
+sr.reveal(`.about-img `, { delay: 800, scale: .5 })
+
+const srt = ScrollReveal({
+    origin: 'bottom',
+    distance: '60px',
+    duration: 2500,
+    delay: 300,
+})
+
+srt.reveal(`.box-1`)
+// sr.reveal(`.box-1 `,{origin : 'left'})
+// sr.reveal(`.box-2 `,{origin : 'right'})
 
 // ScrollReveal().reveal('.content');
