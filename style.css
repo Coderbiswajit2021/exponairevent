@@ -770,11 +770,16 @@ footer .footer-row .col .footer-logo {
     border-radius: 50%;
     text-align: center;
     line-height: 40px;
-    font-size: 20px;
+    font-size: 25px;
     color: #000;
     background: #fff;
     margin-right: 15px;
     cursor: pointer;
+}
+
+.col .social-icons .fa-brands:hover {
+    transform: rotate(360deg) scale(1.2);
+    color: #eb4da4;
 }
 
 .copyright {
@@ -1122,6 +1127,44 @@ footer .footer-row .col .footer-logo {
     border-color: var(--main);
 }
 
+/* project count down section start */
+
+.Partner-row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+.row-col {
+    flex-basis: 22%;
+    text-align: center;
+    /* color: #555; */
+}
+
+.counter-box {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    padding: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 19px -10px #66676c;
+}
+
+.counter-box h2,
+span {
+    display: inline-block;
+    margin: 15px 0;
+    font-size: 50px;
+    color: #000;
+}
+
+.counter-box h4 {
+    font-size: 2.5rem;
+    color: #000;
+
+}
 
 
 /* media query start  */
@@ -1134,6 +1177,10 @@ footer .footer-row .col .footer-logo {
 @media(min-width: 991px) {
     .contact-form {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .counter-box h4 {
+        font-size: 2.5rem;
+    
     }
 }
 
@@ -1289,4 +1336,26 @@ footer .footer-row .col .footer-logo {
         bottom: 60px;
     }
 
+}
+
+
+
+.footer-col {
+    display: flex;
+    align-items: center;
+}
+
+.company_name-1 {
+    margin-bottom: 30px;
+    margin-left: 15px;
+    font-size: 10px;
+}
+
+.company_name-1 h1 {
+    font-size: 30px;
+}
+
+.company_name-1 h2 {
+    font-size: 14px;
+    padding-top: 7px;
 }

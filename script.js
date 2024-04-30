@@ -69,3 +69,21 @@ srt.reveal(`.box-1`)
 // sr.reveal(`.box-2 `,{origin : 'right'})
 
 // ScrollReveal().reveal('.content');
+
+
+function downloadPDF() {
+    var pdfUrl = "E-Brochure/COMPANY PROFILE (1).pdf";
+
+    var link = document.createElement('a');
+    link.href = pdfUrl;
+
+    link.setAttribute('download', 'filename.pdf');
+
+    document.body.appendChild(link);
+
+    link.click();
+
+    document.body.removeChild(link);
+}
+
+document.getElementById('downloadButton').addEventListener('click', downloadPDF);

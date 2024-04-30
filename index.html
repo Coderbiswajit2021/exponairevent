@@ -134,17 +134,17 @@
                 <div class="swiper-slide box">
 
                     <div class="img">
-                        <img src="images/partner-1.jpg" alt="">
+                        <img src="images/partner-1.png" alt="">
                     </div>
                 </div>
                 <div class="swiper-slide box">
                     <div class="img">
-                        <img src="images/partner-2.jpg" alt="">
+                        <img src="images/partner-2.png" alt="">
                     </div>
                 </div>
                 <div class="swiper-slide box">
                     <div class="img">
-                        <img src="images/partner-3.jpg" alt="">
+                        <img src="images/partner-3.png" alt="">
                     </div>
                 </div>
                 <div class="swiper-slide box">
@@ -159,10 +159,41 @@
                 </div>
                 <div class="swiper-slide box">
                     <div class="img">
-                        <img src="images/partner-7.jpg" alt="">
+                        <img src="images/partner-6.png" alt="">
                     </div>
                 </div>
 
+            </div>
+        </div>
+    </section>
+
+    <!-- project count down section start  -->
+    <section class="project-counter" id="Project-counter">
+        <h1 class="heading">Successfully Completed Projects</h1>
+        <div class="Partner-row">
+            <div class="row-col">
+                <div class="counter-box">
+                    <h2 class="counter">215</h2><span>+</span>
+                    <h4>CORPORATE CLIENT</h4>
+                </div>
+            </div>
+            <div class="row-col">
+                <div class="counter-box">
+                    <h2 class="counter">101</h2><span>+</span>
+                    <h4>EVENTS</h4>
+                </div>
+            </div>
+            <div class="row-col">
+                <div class="counter-box">
+                    <h2 class="counter">205</h2><span>+</span>
+                    <h4>EXHIBITIONS</h4>
+                </div>
+            </div>
+            <div class="row-col">
+                <div class="counter-box">
+                    <h2 class="counter">105</h2><span>+</span>
+                    <h4>ACTIVATIONS</h4>
+                </div>
             </div>
         </div>
     </section>
@@ -376,7 +407,14 @@
     <footer>
         <div class="footer-row ">
             <div class="col">
-                <img src="images/logo.png" alt="" class="footer-logo">
+                <div class="footer-col">
+                    <img src="images/logo.png" alt="" class="footer-logo">
+                    <div class="company_name-1">
+                        <h1>Exponair</h1>
+                        <h2>Events & Promotions</h2>
+                    </div>
+                </div>
+
                 <p>Let us take the stress out of planning your next event. Contact us today to learn more about our
                     services and how we can make your event a success.
 
@@ -388,7 +426,8 @@
                 <p>Plot No 883, E Canal Rd,</p>
                 <p>Near Oscar City, Subhadra Nagar, Laxmisagar,</p>
                 <p>Bhubaneswar, Odisha 751006</p>
-                <p class="email-id">info@exponair.com</p>
+                <p class="email-id">info@exponairevents.com</p>
+                <p class="email-id">info.exponairevents@gmail.com</p>
                 <h4>+91 - 8249159345</h4>
             </div>
             <div class="col">
@@ -429,6 +468,21 @@
 
     <!--=============== SCROLLREVEAL ===============-->
     <script src="scrollreveal.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+
+    </script>
 
     <script src="script.js"></script>
 </body>
