@@ -800,6 +800,7 @@ footer .footer-row .col .footer-logo {
 .underline span {
     width: 15px;
     height: 100%;
+    margin: 0;
     background: #fff;
     border-radius: 3px;
     position: absolute;
@@ -1178,9 +1179,10 @@ span {
     .contact-form {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .counter-box h4 {
         font-size: 2.5rem;
-    
+
     }
 }
 
