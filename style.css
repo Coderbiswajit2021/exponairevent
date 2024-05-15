@@ -130,11 +130,13 @@ header.sticky {
     display: block;
 }
 
+
 .header .navbar a {
     color: #fff;
     font-size: 1.7rem;
     margin-left: 2rem;
 }
+
 
 header.sticky .navbar a {
     color: #ffffff;
@@ -385,6 +387,13 @@ header.sticky .navbar a {
     padding: 1rem;
 }
 
+.about .row .about-img-1 {
+    flex: 1 1 45rem;
+    padding: 1rem;
+    border: 1.5px solid #fcf818;
+    border-radius: 39% 61% 30% 70% / 84% 45% 55% 16%;
+}
+
 .about .row .about-img {
     flex: 1 1 45rem;
     padding: 1rem;
@@ -434,6 +443,12 @@ header.sticky .navbar a {
     border-radius: 0.6rem;
 }
 
+.about .row .about-img-1 img {
+    width: 100%;
+    /* border: 1rem solid var(--main); */
+    border-radius: 39% 61% 30% 70% / 84% 45% 55% 16%;
+}
+
 .about .row .content {
     flex: 1 1 45rem;
 }
@@ -446,6 +461,14 @@ header.sticky .navbar a {
     font-size: 1.5rem;
     padding: 1rem 0;
     line-height: 2;
+}
+
+.about .content .content-bold {
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 1rem 0;
+    line-height: 2;
+
 }
 
 /* service section start  */
@@ -856,8 +879,42 @@ footer a {
     justify-content: center;
 }
 
+.heading-2,
+.heading-3,
+.heading-4 {
+
+    background-size: cover !important;
+    background-position: center !important;
+    padding-top: 10rem;
+    padding-bottom: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("images/bg-2.jpg");
+}
+
+.heading-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("images/corporate-event-1.jpg");
+}
+.heading-4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("images/corporate-event-1.jpg");
+}
+
 .heading-1 h1 {
     font-size: 8rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, .3);
+}
+
+.heading-2,
+.heading-3
+.heading-4 h1 {
+    font-size: 4rem;
+    margin-top: 180px;
     text-transform: uppercase;
     color: #fff;
     text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, .3);
@@ -1551,6 +1608,19 @@ span {
 
     .heading-1 h1 {
         font-size: 5rem;
+    }
+
+    .heading-2,
+    .heading-3
+    .heading-4{
+        padding-bottom: 20rem;
+    }
+
+    .heading-2,
+    .heading-3
+    .heading-4 h1 {
+        font-size: 3rem;
+        margin-top: 110px;
     }
 
     .services-1 .cards {
