@@ -899,6 +899,7 @@ footer a {
 .heading-3 {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("images/corporate-event-1.jpg");
 }
+
 .heading-4 {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("images/corporate-event-1.jpg");
 }
@@ -911,10 +912,10 @@ footer a {
 }
 
 .heading-2,
-.heading-3
+.heading-3,
 .heading-4 h1 {
     font-size: 4rem;
-    margin-top: 180px;
+    padding-top: 180px;
     text-transform: uppercase;
     color: #fff;
     text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, .3);
@@ -1611,16 +1612,16 @@ span {
     }
 
     .heading-2,
-    .heading-3
-    .heading-4{
+    .heading-3,
+    .heading-4 {
         padding-bottom: 20rem;
     }
 
     .heading-2,
-    .heading-3
+    .heading-3,
     .heading-4 h1 {
         font-size: 3rem;
-        margin-top: 110px;
+        padding-top: 110px;
     }
 
     .services-1 .cards {
@@ -1646,7 +1647,7 @@ span {
     }
 
     .Section_top .content {
-        padding: 150px 30px;
+        padding: 200px 30px;
     }
 
     .Section_top .content h3 {
@@ -1658,6 +1659,22 @@ span {
         font-size: 10px;
         margin-top: 10px;
 
+    }
+
+
+    .heading-2 h1 {
+        font-size: 2.5rem;
+        padding-top: 110px;
+    }
+
+    .heading-3 h1 {
+        font-size: 2.5rem;
+        padding-top: 110px;
+    }
+
+    .heading-4 h1 {
+        font-size: 2.5rem;
+        padding-top: 110px;
     }
 
     .about-video-img {
@@ -1691,7 +1708,7 @@ span {
     }
 
     .services-1 .cards .card {
-        height: 250px;
+        height: auto;
         width: 270px;
     }
 
@@ -1700,7 +1717,7 @@ span {
     }
 
     .services-1 .cards .card h2 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .whatsapp-style {
